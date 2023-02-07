@@ -1,0 +1,10 @@
+node_modules
+*.log*
+.vscode
+.notes
+.nuxt
+.nitro
+.cache
+.output
+.env
+dist

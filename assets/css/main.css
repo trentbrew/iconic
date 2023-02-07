@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+/* ------------ tailwind ------------ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------ layout ------------ */
+
+* {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+main {
+  transition: 1s ease;
+}
+
+/* ------------ effects ------------ */
+
+.gradient-blur {
+  mask: linear-gradient(white, transparent);
+  backdrop-filter: blur(4px);
+}
+
+/* ------------ easing ------------ */
+
+.ease-circ {
+  transition: all 0.5s cubic-bezier(0.85, 0, 0.15, 1);
+}
+
+.ease-expo {
+  transition-timing-function: cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+/* ------------ global ------------ */
+
+h1 {
+  font-size: 1.5rem;
+  width: 100%;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
