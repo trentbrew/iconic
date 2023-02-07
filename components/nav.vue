@@ -31,9 +31,8 @@
   >
     <div class="navbar-start w-auto">
       <svg
-        class="opacity-10"
-        width="60"
-        height="60"
+        width="36"
+        height="36"
         viewBox="0 0 100 100"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +42,7 @@
             fill-rule="evenodd"
             clip-rule="evenodd"
             d="M100 0H0V100H20V60H40V100H100V0ZM20 20H40V40H20V20Z"
-            fill="currentColor"
+            fill="white"
           />
         </g>
         <defs>
@@ -53,7 +52,7 @@
         </defs>
       </svg>
     </div>
-    <div class="w-full mr-6 -ml-6 flex justify-center !duration-300">
+    <div class="w-full mr-6 flex justify-center !duration-300">
       <label>
         <tb-icon
           name="search"
