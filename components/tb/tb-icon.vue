@@ -12,7 +12,7 @@
   })
   const svg = ref(null)
   const res = await fetch(
-    `https://toybox.design/api/v1/icons/${props.name}?size=${props.size}`
+    `https://iconic.rest/api/icons/${props.name}?size=${props.size}`
   )
   res.json().then(data => {
     svg.value = data.svg

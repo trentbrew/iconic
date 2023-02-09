@@ -77,7 +77,7 @@
         <li>
           <a
             id="github-link"
-            href="https://github.com/trentbrew/toybox"
+            href="https://github.com/trentbrew/iconic"
             target="_blank"
             class="btn btn-ghost pl-4"
           >
@@ -88,7 +88,7 @@
         <li>
           <a
             id="api-link"
-            href="https://toybox.design/api/v1/icons"
+            href="https://iconic.rest/api/v1/icons"
             target="_blank"
             class="btn btn-ghost pl-4"
           >
