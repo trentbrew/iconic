@@ -1,6 +1,6 @@
 ## Icons API
 
-You can use the API to fetch icons. The API is available at [iconic.rest/api/v1/icons](https://iconic.rest/api/v1/icons). The API returns the following JSON:
+You can use the API to fetch icons. The API is available at [iconic.rest/api/icons](https://iconic.rest/v1/icons). The API returns the following JSON:
 
 ```json
 {
@@ -46,7 +46,7 @@ To add a new icon, insert a new object into the `icons` array in `~/data/icons.j
   })
 
   const { svg } = await http.get(
-    `http://toybox.design/api/v1/icons/${props.name}?size=${props.size}`
+    `http://toybox.design/api/icons/${props.name}?size=${props.size}`
   )
 </script>
 

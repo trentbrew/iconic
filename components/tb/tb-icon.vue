@@ -12,7 +12,7 @@
   })
   const svg = ref(null)
   const res = await fetch(
-    `https://iconic.rest/api/v1/icons/${props.name}?size=${props.size}`
+    `https://www.iconic.rest/api/icons/${props.name}?size=${props.size}`
   )
   res.json().then(data => {
     svg.value = data.svg
