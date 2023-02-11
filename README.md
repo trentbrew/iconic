@@ -1,6 +1,6 @@
 ## Icons API
 
-You can use the API to fetch icons. The API is available at [iconic.rest/api/v1/icons](https://iconic.rest/api/icons). The API returns the following JSON:
+You can use the API to fetch icons. The API is available at [iconic.rest/api/v1/icons](https://iconic.rest/api/v1/icons). The API returns the following JSON:
 
 ```json
 {
