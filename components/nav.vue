@@ -88,7 +88,7 @@
         <li>
           <a
             id="api-link"
-            href="https://iconic.rest/api/v1/icons"
+            href="https://iconic.rest/api/icons"
             target="_blank"
             class="btn btn-ghost pl-4"
           >
