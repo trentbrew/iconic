@@ -11,3 +11,11 @@
     <NuxtLayout />
   </Html>
 </template>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+  * {
+    font-family: 'Ubuntu Mono', monospace;
+  }
+</style>
