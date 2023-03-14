@@ -113,12 +113,6 @@
             }}</span>
           </div>
           <div class="flex gap-4">
-            <a :href="`https://www.iconic.rest/api/icons/${icon.name}`"
-              ><div
-                class="opacity-0 group-hover:opacity-100 w-6 h-6 flex justify-center items-cenmter hover:scale-110 active:scale-90 cursor-pointer"
-              >
-                <tb-icon name="globe" class="text-primary" /></div
-            ></a>
             <div
               @click="copySvg(icon)"
               class="opacity-0 group-hover:opacity-100 w-6 h-6 flex justify-center items-cenmter hover:scale-110 active:scale-90 cursor-pointer"
@@ -142,6 +136,12 @@
                 class="text-primary"
               />
             </div>
+            <a :href="`https://www.iconic.rest/api/icons/${icon.name}`"
+              ><div
+                class="opacity-0 group-hover:opacity-100 w-6 h-6 flex justify-center items-cenmter hover:scale-110 active:scale-90 cursor-pointer"
+              >
+                <tb-icon name="globe" class="text-primary" /></div
+            ></a>
           </div>
         </li>
         <a
