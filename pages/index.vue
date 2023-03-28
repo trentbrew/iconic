@@ -63,7 +63,7 @@
 <template>
   <main>
     <section v-show="!state.search">
-      <div class="hero min-h-[50vh] bg-base-200">
+      <!-- <div class="hero min-h-[50vh] bg-base-200">
         <div class="hero-content text-center">
           <div class="max-w-md">
             <h1 class="text-5xl">
@@ -77,18 +77,9 @@
             <a href="https://github.com/trentbrew/iconic#readme" target="_blank"
               ><button class="btn btn-primary">Get Started</button></a
             >
-            <!-- <a
-              href="https://www.iconic.rest/api/icons"
-              target="_blank"
-              class="ml-2"
-            >
-              <button class="btn btn-primary btn-outline">
-                Explore the API
-              </button>
-            </a> -->
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
     <ul class="w-full grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-3">
       <div
