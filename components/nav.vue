@@ -13,6 +13,10 @@
     state.scroll = e.value
   }
 
+  function handleLogoClick() {
+    location.reload()
+  }
+
   watch(
     () => state.search,
     val => {
@@ -31,6 +35,8 @@
   >
     <div class="navbar-start w-auto">
       <svg
+        class="hover:scale-[1.05] active:scale-[0.98] cursor-pointer duration-150"
+        @click="handleLogoClick"
         width="36"
         height="36"
         viewBox="0 0 100 100"

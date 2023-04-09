@@ -87,22 +87,18 @@ export const useGlobalStore = defineStore('global', {
   },
   actions: {
     setTheme(theme) {
-      console.log(`Theme set to ${theme.name}`)
       this.ui.themes.active = theme
     },
     clearSearch() {
       this.search.query = ''
-      console.log('search cleared')
     },
     updateQuery(query) {
       this.search.query = query
-      console.log('search query updated: ', query)
     },
     setGradientLoading(payload) {
       this.ui.gradient.loading = payload
     },
     toast(type, message) {
-      console.log('toast message: ', message)
       this.ui.toast.active = true
       this.ui.toast.message = message
       this.ui.toast.type = type

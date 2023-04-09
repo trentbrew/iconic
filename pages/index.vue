@@ -89,8 +89,7 @@
         :aria-label="`Download ${icon.name}`"
       >
         <li
-          style="transition: 75ms"
-          class="w-full flex justify-between items-center rounded-box p-6 group border-[2px]"
+          class="w-full flex justify-between items-center rounded-box p-6 group border-[2px] !duration-75"
           :class="
             global.theme.type == 'light'
               ? 'border-base-200 bg-base-100'
