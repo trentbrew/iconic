@@ -24,11 +24,7 @@
     return state.search
       ? await api.icons
           .get()
-          .filter(
-            icon =>
-              icon.name.includes(state.search) ||
-              icon.tags.some(tag => tag.includes(state.search))
-          )
+          .filter(icon => icon.name.includes(state.search) || icon.tags.some(tag => tag.includes(state.search)))
       : await api.icons.get()
   }
 
@@ -90,17 +86,11 @@
       >
         <li
           class="w-full flex justify-between items-center rounded-box p-6 group border-[2px] !duration-75"
-          :class="
-            global.theme.type == 'light'
-              ? 'border-base-200 bg-base-100'
-              : 'border-transparent bg-base-100'
-          "
+          :class="global.theme.type == 'light' ? 'border-base-200 bg-base-100' : 'border-transparent bg-base-100'"
         >
           <div class="left flex items-center gap-3">
             <div v-html="icon.svg" class="text-base-content"></div>
-            <span class="opacity-40 font-bold group-hover:opacity-100">{{
-              icon.name
-            }}</span>
+            <span class="opacity-40 font-bold group-hover:opacity-100">{{ icon.name }}</span>
           </div>
           <div class="flex gap-4">
             <div
@@ -114,17 +104,8 @@
               class="opacity-0 group-hover:opacity-100 w-6 h-6 flex justify-center items-cenmter hover:scale-110 active:scale-90 cursor-pointer"
             >
               <!-- <tb-icon name="copy" class="text-primary"></tb-icon> -->
-              <tb-icon
-                v-show="!state.downloading"
-                name="download"
-                class="text-primary"
-              />
-              <tb-loader
-                v-show="state.downloading"
-                type="3"
-                size="24"
-                class="text-primary"
-              />
+              <tb-icon v-show="!state.downloading" name="download" class="text-primary" />
+              <tb-loader v-show="state.downloading" type="3" size="24" class="text-primary" />
             </div>
             <a :href="`https://www.iconic.rest/api/icons/${icon.name}`"
               ><div
@@ -143,13 +124,8 @@
         ></a>
       </div>
     </ul>
-    <div
-      v-if="!state.filtered.length"
-      class="w-full h-[calc(100vh-300px)] flex justify-center items-center"
-    >
-      <h3
-        class="flex flex-col justify-center items-center gap-3 text-lg w-full text-center"
-      >
+    <div v-if="!state.filtered.length" class="w-full h-[calc(100vh-300px)] flex justify-center items-center">
+      <h3 class="flex flex-col justify-center items-center gap-3 text-lg w-full text-center">
         <span class="text-3xl">{{ '(╥﹏╥)' }}</span>
         <span class="text-base opacity-50">No icons found</span>
       </h3>
