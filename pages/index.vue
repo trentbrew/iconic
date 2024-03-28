@@ -27,7 +27,7 @@
           .filter(
             icon =>
               icon.name.includes(state.search) ||
-              icon.tags.includes(state.search)
+              icon.tags.some(tag => tag.includes(state.search))
           )
       : await api.icons.get()
   }
