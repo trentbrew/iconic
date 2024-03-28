@@ -28,13 +28,13 @@
 <template>
   <nav
     v-scroll="handleScroll"
-    class="fixed navbar px-6 py-4 z-10"
+    class="fixed navbar pr-6 py-4 z-10 pl-0"
     :class="`backdrop-blur-xl bg-base-100 border-base-200 ${
       state.scroll > 0 ? 'border-b-[1.5px]' : 'border-b-0'
     }`"
   >
     <div class="navbar-start w-auto">
-      <svg
+      <!-- <svg
         class="hover:scale-[1.05] active:scale-[0.98] cursor-pointer duration-150"
         @click="handleLogoClick"
         width="32"
@@ -56,7 +56,7 @@
             <rect width="100" height="100" fill="white" />
           </clipPath>
         </defs>
-      </svg>
+      </svg> -->
     </div>
     <div class="w-full mr-6 flex justify-center !duration-300">
       <label>
